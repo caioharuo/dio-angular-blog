@@ -1,16 +1,11 @@
 <a href="#" class="container__small-card">
-  <img
-    src="https://i.stack.imgur.com/luaq2.png"
-    alt=""
-    class="small-card__photo"
-  />
+  <img src="{{ photoCoverUrl }}" alt="" class="small-card__photo" />
 
   <div class="small-card__publication-container">
-    <span class="small-card__publication-date">Janeiro 1, 2023</span>
+    <span class="small-card__publication-date">{{ publicationDate }}</span>
 
     <p class="small-card__description">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex corporis
-      necessitatibus
+      {{ description }}
     </p>
   </div>
 </a>
