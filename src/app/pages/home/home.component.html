@@ -2,17 +2,17 @@
 <div class="container__articles">
   <main>
     <app-big-card
-      id="1"
-      photoCoverUrl="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/marvels_spider_man_ps_plus__2v7n40fa6.jpg"
-      publicationDate=""
-      title="Spider-man PS4"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae labore blanditiis, "
+      id="{{ bigCardData.id }}"
+      photoCoverUrl="{{ bigCardData.photo }}"
+      publishedDate="{{ bigCardData.publishedDate }}"
+      title="{{ bigCardData.title }}"
+      description="{{ bigCardData.description }}"
     ></app-big-card>
   </main>
 
   <aside>
     <app-small-card
-      *ngFor="let item of data"
+      *ngFor="let item of smallCardData"
       id="{{ item.id }}"
       photoCoverUrl="{{ item.photo }}"
       publicationDate="{{ item.publishedDate }}"

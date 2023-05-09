@@ -7,5 +7,6 @@ import { dataFake } from 'src/app/data/dataFake';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  data = dataFake;
+  bigCardData = dataFake[0];
+  smallCardData = dataFake.filter((item) => item.id !== 1);
 }

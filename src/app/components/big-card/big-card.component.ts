@@ -13,7 +13,7 @@ export class BigCardComponent {
   photoCoverUrl: string = '';
 
   @Input()
-  publicationDate: string = '';
+  publishedDate: string = '';
 
   @Input()
   title: string = '';
