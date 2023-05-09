@@ -1,10 +1,10 @@
-<app-menu-bar></app-menu-bar>
 <app-menu-title></app-menu-title>
 <div class="container__articles">
   <main>
     <app-big-card
+      id="1"
       photoCoverUrl="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/marvels_spider_man_ps_plus__2v7n40fa6.jpg"
-      publicationDate="Abril 28, 2023"
+      publicationDate=""
       title="Spider-man PS4"
       description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vitae labore blanditiis, "
     ></app-big-card>
@@ -12,19 +12,11 @@
 
   <aside>
     <app-small-card
-      photoCoverUrl="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/marvels_spider_man_ps_plus__2v7n40fa6.jpg"
-      publicationDate="Abril 28, 2023"
-      description="Lorem ipsum dolor sit amet consectetur amet consectetur, "
-    ></app-small-card>
-    <app-small-card
-      photoCoverUrl="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/marvels_spider_man_ps_plus__2v7n40fa6.jpg"
-      publicationDate="Abril 28, 2023"
-      description="Lorem ipsum dolor sit amet consectetur amet consectetur, "
-    ></app-small-card>
-    <app-small-card
-      photoCoverUrl="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/marvels_spider_man_ps_plus__2v7n40fa6.jpg"
-      publicationDate="Abril 28, 2023"
-      description="Lorem ipsum dolor sit amet consectetur amet consectetur, "
+      *ngFor="let item of data"
+      id="{{ item.id }}"
+      photoCoverUrl="{{ item.photo }}"
+      publicationDate="{{ item.publishedDate }}"
+      description="{{ item.description }}"
     ></app-small-card>
   </aside>
 </div>
